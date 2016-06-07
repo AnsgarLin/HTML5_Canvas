@@ -29,10 +29,13 @@ function canvasApp() {
 
 	function drawScreen() {
 		context.fillStyle = "#000000";
-		context.strokeStyle = "#ff00ff";
-		context.lineWidth = 2;
-		context.fillRect(10, 10, 40, 40);
-		context.strokeRect(0, 0, 60, 60);
-		context.clearRect(20, 20, 20, 20);
+		context.strokeStyle = "black";
+		context.lineWidth = 10;
+		context.lineCap = "square";
+		context.beginPath();
+		context.moveTo(20, 0);
+		context.lineTo(100, 0);
+		context.stroke();
+		context.closePath();
 	}
 }
